@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatWindow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ebedec"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCompanyName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="357dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="#ebedec"
+            android:ems="10"
+            android:hint="Введите сообщение..."
+            android:inputType="textPersonName"
+            android:textColorHint="#7E7B7A" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSend"
+            android:layout_width="55dp"
+            android:layout_height="57dp"
+            android:background="#ebedec"
+            app:srcCompat="@drawable/ic_send_button" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCompanyName"
+        android:layout_width="372dp"
+        android:layout_height="31dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/irru4uaeje4" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/chatWindow"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCompanyName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_back2_button" />
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="408dp"
+        android:layout_height="49dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/backalmond" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

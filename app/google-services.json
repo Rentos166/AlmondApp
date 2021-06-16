@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "327142425767",
+    "project_id": "almondapp-7e41d",
+    "storage_bucket": "almondapp-7e41d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327142425767:android:758a378308369e050e8782",
+        "android_client_info": {
+          "package_name": "com.almondapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327142425767-h15a24no4c1hj5k2212qbtr5to0tlpgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.almondapp",
+            "certificate_hash": "7a1031efbe8997ecbb1be96fc325a12cafb702fe"
+          }
+        },
+        {
+          "client_id": "327142425767-favj2pj7stfu63n7o4qa4qhalesavodp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkPdTXpsxSdqme_e2wsrc75U2P-OqE__g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327142425767-favj2pj7stfu63n7o4qa4qhalesavodp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

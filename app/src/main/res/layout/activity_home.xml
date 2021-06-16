@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBackground2"
+        android:layout_width="413dp"
+        android:layout_height="104dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backalmond" />
+
+    <ImageView
+        android:id="@+id/imageViewCompanyName2"
+        android:layout_width="413dp"
+        android:layout_height="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/irru4uaeje4" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Home page"
+        android:textAllCaps="true"
+        android:textColor="#009ca5 "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCompanyName2" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Here you can edit your profile and chat"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#f36523"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfile"
+        android:layout_width="88dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fui_ic_anonymous_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonChat"
+        android:layout_width="88dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonProfile"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_chat_button" />
+
+    <TextView
+        android:id="@+id/textViewEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Edit profile"
+        android:textColor="#f36523"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonProfile"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonProfile"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonProfile" />
+
+    <TextView
+        android:id="@+id/textViewCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Chat room"
+        android:textColor="#009ca5 "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonChat"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonChat"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonChat" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#00EFEFEF"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_logout_button" />
+
+    <TextView
+        android:id="@+id/textViewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonLogout"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonLogout"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonLogout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

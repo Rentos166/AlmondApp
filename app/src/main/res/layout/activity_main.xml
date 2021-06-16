@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/root_layot"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCompanyName"
+        android:layout_width="413dp"
+        android:layout_height="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/irru4uaeje4" />
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="413dp"
+        android:layout_height="104dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backalmond" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="112dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#f36523"
+        android:text="Sign in"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewReg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonRegister" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#009ca5"
+        android:text="Register now"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/buttonSignIn" />
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="Welcome to AlmondApp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCompanyName" />
+
+    <TextView
+        android:id="@+id/textViewEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Sign in to your account"
+        android:textAlignment="center"
+        android:textColor="#009ca5 "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+    <TextView
+        android:id="@+id/textViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="You do not have an account? Then register!"
+        android:textAlignment="center"
+        android:textColor="#f36523"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
